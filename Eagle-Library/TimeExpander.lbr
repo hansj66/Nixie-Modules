@@ -632,24 +632,24 @@
 <text x="20.828" y="49.911" size="1.016" layer="21" font="vector" rot="R270">SDA</text>
 <text x="30.988" y="3.7999" size="1.016" layer="21" font="vector" rot="R90">IOr</text>
 </package>
-<package name="NIXIE_INTERCONNECT">
+<package name="NIXIE_INTERCONNECT_LEFT">
 <pad name="HV" x="-10.16" y="5.08" drill="0.8" shape="square"/>
 <pad name="GND" x="-10.16" y="2.54" drill="0.8" shape="square"/>
 <pad name="SERIAL" x="-10.16" y="0" drill="0.8" shape="square"/>
-<pad name="RCLK" x="-10.16" y="-2.54" drill="0.8" shape="square"/>
-<pad name="SRCLK" x="-10.16" y="-5.08" drill="0.8" shape="square"/>
-<pad name="+5V" x="-10.16" y="-7.62" drill="0.8" shape="square"/>
+<pad name="RCLK" x="-12.7" y="5.08" drill="0.8" shape="square"/>
+<pad name="SRCLK" x="-12.7" y="2.54" drill="0.8" shape="square"/>
+<pad name="+5V" x="-12.7" y="0" drill="0.8" shape="square"/>
 <text x="-8.89" y="4.445" size="1.27" layer="21">HV</text>
 <text x="-8.89" y="1.905" size="1.27" layer="21">GND</text>
 <text x="-8.89" y="-0.635" size="1.27" layer="21">SER</text>
-<text x="-8.89" y="-3.175" size="1.27" layer="21">RCLK</text>
-<text x="-8.89" y="-5.715" size="1.27" layer="21">SRCLK</text>
-<text x="-8.89" y="-8.255" size="1.27" layer="21">+5V</text>
-<wire x1="-11.43" y1="6.35" x2="-11.43" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-8.89" x2="-3.81" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-8.89" x2="-3.81" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="6.35" x2="-11.43" y2="6.35" width="0.127" layer="21"/>
-<text x="-10.795" y="6.985" size="1.27" layer="21">&gt;NAME</text>
+<text x="-15.24" y="4.445" size="1.27" layer="21">RC</text>
+<text x="-15.24" y="1.905" size="1.27" layer="21">SR</text>
+<text x="-15.24" y="-0.635" size="1.27" layer="21">+5V</text>
+<wire x1="-15.24" y1="6.35" x2="-15.24" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-15.24" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="6.35" x2="-15.24" y2="6.35" width="0.127" layer="21"/>
+<text x="-4.445" y="4.445" size="1.27" layer="21" rot="R270">&gt;NAME</text>
 </package>
 <package name="MICROBIT_CONNECTOR">
 <pad name="P0" x="0" y="0" drill="0.8" shape="square"/>
@@ -1043,6 +1043,25 @@ grid 2.54 mm</description>
 <text x="3.1" y="0.7" size="1.27" layer="21" rot="R90">+5V</text>
 <text x="5.8" y="0.8" size="1.27" layer="21" rot="R90">GND</text>
 <text x="8.3" y="1" size="1.27" layer="21" rot="R90">HV</text>
+</package>
+<package name="NIXIE_INTERCONNECT_RIGHT">
+<pad name="HV" x="-10.16" y="5.08" drill="0.8" shape="square"/>
+<pad name="GND" x="-10.16" y="2.54" drill="0.8" shape="square"/>
+<pad name="SERIAL" x="-10.16" y="0" drill="0.8" shape="square"/>
+<pad name="RCLK" x="-7.62" y="5.08" drill="0.8" shape="square"/>
+<pad name="SRCLK" x="-7.62" y="2.54" drill="0.8" shape="square"/>
+<pad name="+5V" x="-7.62" y="0" drill="0.8" shape="square"/>
+<text x="-13.97" y="4.445" size="1.27" layer="21">HV</text>
+<text x="-15.24" y="1.905" size="1.27" layer="21">GND</text>
+<text x="-15.24" y="-0.635" size="1.27" layer="21">SER</text>
+<text x="-6.35" y="4.445" size="1.27" layer="21">RCLK</text>
+<text x="-6.35" y="1.905" size="1.27" layer="21">SRCLK</text>
+<text x="-6.35" y="-0.635" size="1.27" layer="21">+5V</text>
+<wire x1="-16.51" y1="6.35" x2="-16.51" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="6.35" x2="-16.51" y2="6.35" width="0.127" layer="21"/>
+<text x="-17.145" y="-0.635" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2087,7 +2106,20 @@ grid 2.54 mm</description>
 <gate name="G$1" symbol="NIXIE_INTERCONNECT" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="NIXIE_INTERCONNECT">
+<device name="LEFT" package="NIXIE_INTERCONNECT_LEFT">
+<connects>
+<connect gate="G$1" pin="+5V" pad="+5V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HV" pad="HV"/>
+<connect gate="G$1" pin="RCLK" pad="RCLK"/>
+<connect gate="G$1" pin="SERIAL" pad="SERIAL"/>
+<connect gate="G$1" pin="SRCLK" pad="SRCLK"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RIGHT" package="NIXIE_INTERCONNECT_RIGHT">
 <connects>
 <connect gate="G$1" pin="+5V" pad="+5V"/>
 <connect gate="G$1" pin="GND" pad="GND"/>

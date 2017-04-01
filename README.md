@@ -36,8 +36,10 @@ Each Module has two Nixie tubes, a shift register and a nixie driver. The module
 - 2 x anode resistors. The value of these should be calculated according to tube rating and drive voltage.  
 
 ![IN2Modules](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules-running.jpg)
-![IN2Modules](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules.jpg)
-![IN2Modules](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules-assembled.jpg)
+
+![IN2Modules_individual](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules2.jpg)
+
+![IN2Modules_assembled](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules-assembled.jpg)
 
 # TimeExpander Eagle Library
 The librar contains Eagle symbol, package and device definitions for K155ID1 (pin compatible with the obsolete 74141) along with the following display tubes:  

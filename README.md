@@ -26,14 +26,18 @@ The shield has 4 IN-12 Nixie tubes. The shield requires external 170V power. 5V 
 - D8-D12: optional switches.  
 
 
-# Nixie-Modules
+# IN-2 Nixie-Modules
 Each Module has two Nixie tubes, a shift register and a nixie driver. The modules require external 5V/170V power. The on-board shift registeres allows the modules to be daisy chained.  
 
 ##Parts list:
-- 2 x IN-1/2/12 tubes.
+- 2 x IN-2 tubes.
 - 2 x K155ID1.
 - 1 x 74HC595.
 - 2 x anode resistors. The value of these should be calculated according to tube rating and drive voltage.  
+
+![IN2Modules](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules-running.jpg)
+![IN2Modules](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules.jpg)
+![IN2Modules](http://www.timeexpander.com/wordpress/wp-content/uploads/in2-modules-assembled.jpg)
 
 # TimeExpander Eagle Library
 The librar contains Eagle symbol, package and device definitions for K155ID1 (pin compatible with the obsolete 74141) along with the following display tubes:  
@@ -42,6 +46,9 @@ The librar contains Eagle symbol, package and device definitions for K155ID1 (pi
 - IN-12
 - IV-12
 - IV-22
+
+# IN-1-Modules
+TBD
 
 # VFD-Modules
 TBD

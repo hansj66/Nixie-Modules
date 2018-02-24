@@ -1,0 +1,8 @@
+BoM
+
+6 x IN-12 Nixie tubes
+1 x ULN2003 (SO16 narrow)
+3 x K155ID1 (or equivalent) nixie drivers
+6 x 74HC696 (DIP16) shift registers
+3 x 10k resistors (0805)
+6 x 1/4W anoderesistors. Exact value depends on drive voltage. Current should be in the region 2-3mA.

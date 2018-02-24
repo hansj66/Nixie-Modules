@@ -1,6 +1,18 @@
 This repository holds a Collection of Eagle schematics and board layouts for driving Nixie and VFD display tubes.
-These schematics are not yet verified. The IN-12 Shield is tested ok. The modules are still in development.
-  
+These schematics are not yet verified. The IN-12 Arduino and Raspberry Shields are tested ok. The remaining modules are still in development.
+
+# IN-12-Raspberry Pi Zero W Shield
+
+This is a 6 tube shield that connects to the GPIO header of a Raspberry Pi Zero W. 
+
+![IN12 RaspberryShield1](http://www.timeexpander.com/wordpress/wp-content/uploads/tubes_daylight.jpg)
+
+![IN12 RaspberryShield2](http://www.timeexpander.com/wordpress/wp-content/uploads/shield_back.jpg)
+
+![IN12 RaspberryShield3](http://www.timeexpander.com/wordpress/wp-content/uploads/tubes_front.jpg)
+
+A video of the shield running the clock.c driver can be found here: https://youtu.be/0auW9YwZaXU
+
 # IN-12-Arduino Shield 
 
 ![IN12Shield1](http://www.timeexpander.com/wordpress/wp-content/uploads/Nixie2.jpg)
